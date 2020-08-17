@@ -8,5 +8,5 @@ WHERE LEFT(CITY, 1) IN ('a', 'e', 'i', 'o', 'u');
 
 -- # Method 2:
 SELECT DISTINCT CITY
-FROM STATION 
-WHERE CITY RLIKE '.*[aeiou]$';
+FROM STATION
+WHERE CITY RLIKE '^[aeiou].*';
