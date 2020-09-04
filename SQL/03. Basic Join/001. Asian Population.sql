@@ -1,0 +1,14 @@
+-- # Problem: https://www.hackerrank.com/challenges/asian-population/problem
+
+-- # Method 1:
+SELECT SUM(CI.POPULATION)
+FROM CITY CI
+JOIN COUNTRY CO
+ON CI.COUNTRYCODE = CO.CODE
+WHERE CO.CONTINENT = 'Asia';
+
+-- # Method 2:
+SELECT SUM(CI.POPULATION)
+FROM CITY CI, COUNTRY CO
+WHERE CI.COUNTRYCODE = CO.CODE AND CO.CONTINENT = 'Asia';
+
