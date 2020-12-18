@@ -1,4 +1,4 @@
-# Question: https://www.hackerrank.com/challenges/occupations/problem
+-- # Problem: https://www.hackerrank.com/challenges/occupations/problem
 
 SELECT Min(CASE WHEN tbl.occupation = 'Doctor' THEN tbl.name ELSE NULL END) AS 'Doctor',
        Min(CASE WHEN tbl.occupation = 'Professor' THEN tbl.name ELSE NULL END) AS 'Professor',
