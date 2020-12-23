@@ -1,0 +1,8 @@
+-- # Problem: https://www.hackerrank.com/challenges/the-blunder/problem
+
+# removing 0 from column salary needs the function REPLACE(salary, 0, '')
+
+SELECT CEIL(AVG(salary) - AVG(REPLACE(salary, 0, '')))
+FROM employees;
+
+
