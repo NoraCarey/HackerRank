@@ -1,0 +1,17 @@
+-- # Problem: https://www.hackerrank.com/challenges/weather-observation-station-18/problem
+
+
+# Manhattan Distance: The distance between two points measured along axes at right angles. 
+#                     In a plane with p1 at (x1, y1) and p2 at (x2, y2), it is |x1 - x2| + |y1 - y2|.
+
+# Euclidean Distance: The straight line distance between two points. 
+#                     In a plane with p1 at (x1, y1) and p2 at (x2, y2), it is √((x1 - x2)² + (y1 - y2)²).
+
+# Hamming Distance: The number of bits which differ between two binary strings. 
+#                   More formally, the distance between two strings A and B is ∑ | Ai - Bi |.
+
+
+SELECT ROUND((ABS(MIN(lat_n) - MAX(lat_n)) + ABS(MIN(long_w) - MAX(long_w))), 4)
+FROM station;
+
+
