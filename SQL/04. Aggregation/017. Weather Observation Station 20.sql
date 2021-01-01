@@ -1,4 +1,4 @@
--- #Problem: https://www.hackerrank.com/challenges/weather-observation-station-20/problem
+-- # Problem: https://www.hackerrank.com/challenges/weather-observation-station-20/problem
 
 
 SET @row_num = 0;
