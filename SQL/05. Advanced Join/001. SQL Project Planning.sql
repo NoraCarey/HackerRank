@@ -10,7 +10,7 @@ FROM (SELECT start_date
       FROM projects
       WHERE start_date NOT IN (SELECT end_date
                                FROM projects)) AS a,
-      # select end dates that art not start dates of other projects                        
+      # select end dates that are not start dates of other projects                        
       (SELECT end_date
        FROM projects
        WHERE end_date NOT IN (SELECT start_date
